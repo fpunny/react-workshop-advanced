@@ -1,0 +1,16 @@
+@import 'mixins';
+@import 'variables';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    @include flex(column);
+    background-color: $BACKGROUND_COLOR;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: white;
+}

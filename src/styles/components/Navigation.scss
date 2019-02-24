@@ -1,0 +1,25 @@
+@import '../mixins';
+@import '../variables';
+
+.nav {
+
+    @include flex(flex-start, center);
+    padding: 14px 10px 10px;
+
+    &__items {
+        @include flex;
+        list-style-type: none;
+        margin-left: auto;
+        margin-right: -2px;
+    }
+
+    &__link {
+        @include transition(color);
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        margin: 0 20px;
+        &--active {
+            color: white;
+        }
+    }
+}
